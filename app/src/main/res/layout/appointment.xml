@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.yasi27.final2.AppointmentActivity"
+    android:background="#B2EBF2">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time"
+        android:id="@+id/textView4"
+        android:layout_marginStart="40dp"
+        android:textStyle="bold"
+        android:textSize="28sp"
+        android:layout_marginTop="148dp"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/edittime"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date"
+        android:id="@+id/textView5"
+        android:textStyle="bold"
+        android:layout_marginBottom="35dp"
+        android:textSize="28sp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="38dp"
+        android:layout_toStartOf="@+id/edittime"
+        android:layout_marginTop="88dp"
+        android:layout_below="@+id/textView4"
+        android:layout_above="@+id/reminder" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="10"
+        android:id="@+id/editdate"
+        android:layout_marginEnd="46dp"
+        android:layout_marginStart="151dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="74dp"
+        android:layout_below="@+id/textView4" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="time"
+        android:ems="10"
+        android:id="@+id/edittime"
+        android:layout_alignEnd="@+id/editdate"
+        android:layout_alignStart="@+id/editdate"
+        android:layout_below="@+id/textView7"
+        android:layout_marginTop="67dp"
+        android:layout_above="@+id/textView5" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Remind Me"
+        android:id="@+id/reminder"
+        android:textSize="20sp"
+        android:background="#0097A7"
+        android:layout_marginBottom="127dp"
+        android:layout_alignEnd="@+id/editdate"
+        android:layout_marginEnd="34dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/textView4"
+        android:layout_marginStart="34dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/info"
+        android:layout_marginTop="68dp"
+        android:textSize="18sp"
+        android:layout_alignStart="@+id/textView5"
+        android:layout_alignTop="@+id/reminder"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="35dp"
+        android:layout_alignParentBottom="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="       My appointment"
+        android:id="@+id/textView7"
+        android:textSize="34sp"
+        android:textColor="#006064"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="31dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>

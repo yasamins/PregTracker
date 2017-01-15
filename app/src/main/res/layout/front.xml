@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="@drawable/bkg"
+    tools:context="com.example.yasi27.final2.MainActivity2">
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/notes"
+        android:background="@drawable/note"
+        android:layout_marginEnd="71dp"
+        android:layout_alignStart="@+id/askmydoc"
+        android:layout_marginBottom="154dp"
+        android:layout_marginTop="297dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/weight"
+        android:layout_alignParentTop="true" />
+
+    <Button
+        android:id="@+id/weight"
+        style="@style/heart_rate" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/profile"
+        android:background="@drawable/pro"
+        android:onClick="profile"
+        android:layout_alignStart="@+id/askmydoc"
+        android:layout_marginStart="77dp"
+        android:layout_below="@+id/weight"
+        android:layout_toStartOf="@+id/weight"
+        android:layout_above="@+id/myweight" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/myweight"
+        android:background="@drawable/scale2"
+        android:layout_marginEnd="74dp"
+        android:layout_marginStart="226dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/askmydoc"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true" />
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/countdown"
+        android:textStyle="bold"
+        android:layout_above="@+id/profile"
+        android:layout_alignEnd="@+id/myweight" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ask"
+        android:id="@+id/askmydoc"
+        android:layout_marginStart="63dp"
+        android:layout_marginEnd="77dp"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/weight"
+        android:layout_marginTop="79dp"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/weight" />
+
+
+</RelativeLayout>

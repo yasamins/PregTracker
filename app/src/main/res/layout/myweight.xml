@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B2EBF2"
+    tools:context="com.example.yasi27.final2.WeightActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My weight"
+        android:id="@+id/textView6"
+        android:layout_marginBottom="77dp"
+        android:textSize="32sp"
+        android:textColor="#006064"
+        android:layout_marginTop="51dp"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/textView8"
+        android:layout_alignEnd="@+id/save" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="    Pre-pregnancy weight"
+        android:id="@+id/textView8"
+        android:textSize="25sp"
+        android:layout_marginBottom="42dp"
+        android:layout_above="@+id/textView9"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="    Current weight"
+        android:id="@+id/textView9"
+        android:textSize="25sp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView6"
+        android:layout_alignBottom="@+id/textView6"
+        android:background="@drawable/mybelly"
+        android:layout_alignStart="@+id/textView9"
+        android:layout_marginStart="83dp"
+        android:layout_alignTop="@+id/textView6"
+        android:layout_alignEnd="@+id/cancel" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:id="@+id/save"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="130dp"
+        android:background="#4DD0E1"
+        android:layout_marginEnd="77dp"
+        android:layout_below="@+id/currentweight"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/textView9"
+        android:layout_marginStart="42dp"
+        android:layout_alignParentBottom="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:onClick="clear"
+        android:id="@+id/cancel"
+        android:background="#4DD0E1"
+        android:layout_alignTop="@+id/save"
+        android:layout_marginStart="70dp"
+        android:layout_alignParentEnd="false"
+        android:layout_alignBottom="@+id/save"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/preweight"
+        android:layout_alignTop="@+id/textView8"
+        android:layout_marginEnd="46dp"
+        android:layout_alignStart="@+id/save"
+        android:layout_marginStart="56dp"
+        android:layout_alignBottom="@+id/textView8"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/currentweight"
+        android:layout_alignStart="@+id/preweight"
+        android:layout_alignEnd="@+id/preweight"
+        android:layout_alignBottom="@+id/textView9"
+        android:layout_alignTop="@+id/textView9" />
+
+
+</RelativeLayout>

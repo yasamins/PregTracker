@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="@drawable/footbk"
+    tools:context="com.example.yasi27.final2.HomeActivity">
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/notes"
+        android:background="@drawable/note"
+        android:layout_marginBottom="167dp"
+        android:layout_marginTop="305dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="70dp"
+        android:layout_marginEnd="97dp"
+        android:layout_alignEnd="@+id/profile" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/weight"
+        android:background="@drawable/heartrate1"
+        android:layout_alignTop="@+id/notes"
+        android:layout_alignBottom="@+id/notes"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="62dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="240dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/profile"
+        android:background="@drawable/pro"
+        android:onClick="profile"
+        android:layout_marginStart="64dp"
+        android:layout_marginBottom="184dp"
+        android:layout_marginTop="35dp"
+        android:layout_alignEnd="@+id/weight"
+        android:layout_marginEnd="73dp"
+        android:layout_alignStart="@+id/askmydoc"
+        android:layout_above="@+id/weight"
+        android:layout_alignParentTop="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/myweight"
+        android:background="@drawable/scale2"
+        android:layout_marginEnd="59dp"
+        android:layout_marginStart="252dp"
+        android:layout_alignTop="@+id/askmydoc"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBottom="@+id/askmydoc" />
+
+
+
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/countdown"-->
+        <!--android:textStyle="bold"-->
+        <!--android:layout_alignEnd="@+id/myweight"-->
+        <!--android:layout_marginTop="31dp"-->
+        <!--android:layout_marginBottom="188dp"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_above="@+id/weight"-->
+        <!--android:layout_alignStart="@+id/notes" />-->
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ask"
+        android:id="@+id/askmydoc"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="62dp"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/weight"
+        android:layout_marginEnd="166dp"
+        android:layout_marginBottom="32dp"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/weight"
+        android:layout_alignEnd="@+id/weight" />
+
+
+</RelativeLayout>
